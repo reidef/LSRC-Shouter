@@ -1,0 +1,13 @@
+<div id='newsidebar'>
+  <strong>New Shout</strong>
+  <%= render 'form' %>
+</div>
+
+<h2>Shouts</h2>
+<ul>
+  <% @shouts.each do |shout| %>
+    <li><%= shout.body %> <small><%= link_to "Show", shout %> | 
+                                 <%= link_to "Edit", edit_shout_path(shout) %> | 
+                                 <%= link_to "Delete", shout, :method => :delete, :confirm => "Delete this shout?" %></small></li>
+  <% end %>
+</ul>

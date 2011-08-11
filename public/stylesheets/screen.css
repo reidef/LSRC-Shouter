@@ -1,0 +1,20 @@
+.flash {
+  padding: 10px;
+  border: 1px solid black;
+  color: black;
+  margin-bottom: 5px;
+}
+
+#notice {
+  background: yellow;
+}
+
+#error {
+  background: red;
+}
+
+#newsidebar {
+  float: right;
+  padding: 10px;
+  border: 1px solid black;
+}
